@@ -1,0 +1,38 @@
+<ion-view hide-nav-bar="true">
+  <ion-content class="scroll-bg">
+    <ion-refresher pulling-text="Pull to refresh" on-refresh="doRefresh()">
+    </ion-refresher>
+    <ion-slide-box does-continue="true">
+      <ion-slide ng-repeat="item in weatherItems" ng-cloak>
+        <div class="card list-card-transparent">
+
+          <div class="item item-body item-body-transparent">
+
+            <div class="row">
+              <div class="col" style="font-size: 18px;">{{item.realName}}</div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col" style="font-size: 64px; text-align: center;">
+                <i class="{{item.weatherIcon}} positive"></i> {{ Math.ceil(item.main.temp) }} &deg;{{ settings.deg_letter }}
+              </div>
+            </div>
+
+            <div class="row margin-top">
+              <div class="col text-center">
+                <i class="wi wi-humidity"></i> {{ item.main.humidity }}%
+              </div>
+              <div class="col text-center">
+                <i class="wi wi-windy"></i> {{ Math.round(item.wind.speed) }} {{ settings.speed }}
+              </div>
+              <div class="col text-center">
+                <i class="wi wi-thermometer-exterior"></i> {{ Math.round(item.main.pressure) }}
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </ion-slide>
+    </ion-slide-box>
+  </ion-content>
+</ion-view>

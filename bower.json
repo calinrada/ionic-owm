@@ -1,0 +1,12 @@
+{
+  "name": "Owm",
+  "private": "true",
+  "devDependencies": {
+    "ionic": "driftyco/ionic-bower#1.1.0",
+    "weather-icons": "https://github.com/erikflowers/weather-icons.git#~2.0.10",
+    "ionic-platform-web-client": "~0.2.1"
+  },
+  "dependencies": {
+    "angular-google-places-autocomplete": "~0.2.7"
+  }
+}

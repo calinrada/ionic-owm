@@ -1,0 +1,15 @@
+<ion-view view-title="Settings">
+  <ion-content class="padding scroll-bg">
+    <ion-list>
+
+  <label class="item item-input item-select">
+    <div class="input-label">
+      Units
+    </div>
+    <select name="owmUnit" id="owmUnit" ng-model="settings.unitsDefault" ng-change="settings.changeUnit(settings.unitsDefault)">
+      <option ng-repeat="item in settings.units" ng-selected="{{item.id==settings.unitsDefault}}" value="{{item.id}}">{{item.value}}</option>
+    </select>
+  </label>
+    </ion-list>
+  </ion-content>
+</ion-view>

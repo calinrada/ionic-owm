@@ -1,0 +1,17 @@
+/* Empty. Add your own CSS if you like */
+.scroll-bg {
+  background: url('../img/bg1.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.list-card-transparent {
+    background: rgba(255,255,255,0.2) !important;
+}
+
+.item-body-transparent {
+    background: rgba(255,255,255,0.4) !important;
+}
+
+.slider-pager {
+    bottom: 0px !important;
+}

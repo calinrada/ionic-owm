@@ -1,0 +1,25 @@
+
+<ion-view cache-view="false" view-title="Locations">
+
+  <ion-content class="padding scroll-bg">
+
+    <div class="list list-inset">
+  <div class="item item-divider">
+    Add a new location
+  </div>
+      <label class="item item-input">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="text" placeholder="Barcelona, Spain" g-places-autocomplete ng-model="model.place">
+      </label>
+    </div>
+  <div class="item item-divider">
+    Locations
+  </div>
+    <ion-list show-delete="true" can-swipe="true">
+      <ion-item ng-repeat="item in weatherLocations">
+          {{item.name}}
+          <ion-delete-button class="button-assertive icon ion-trash-a" ng-click="deleteLocation(item, $index)"></ion-delete-button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
