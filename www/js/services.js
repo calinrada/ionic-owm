@@ -33,7 +33,7 @@ angular.module('owm', [])
 
     this.getConfig = function(key) {
         var config = {
-            api_key:'1bf58975a34f1a1beb6d3df67217ddf0'
+            api_key:'YOUR_API_KEY'
         };
 
         return config[key];
